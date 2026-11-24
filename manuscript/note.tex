@@ -1,0 +1,443 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=27mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,array,booktabs}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\setlength{\emergencystretch}{1em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\diam}{\operatorname{diam}}
+\title{Extending Meddaugh and Stephens' examples to every finite neighborhood-shadowing separation}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{November 19, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Extending the $N=1$ examples of Meddaugh and Stephens,
+\emph{Shadowing with small diameter sets of bounded cardinality}
+(arXiv:2509.04312v1, September 4, 2025, Examples 3.4 and 3.6,
+Theorem 3.7), we answer their Questions 5.1 and 5.2
+(Section 5, printed page 11) for every $N\geq1$ by mixing binary
+subshifts with dense periodic points.
+For each $m\geq3$, we construct a compact two-sided subshift with
+neighborhood $(m-1)$-shadowing but without neighborhood $(m-2)$-shadowing.
+A periodic phase cover supplies one fixed tracing set of at most $m-1$
+points with arbitrarily small initial diameter. A progression with widely
+separated occupied sites forces the matching lower bound.
+Every member fails quasi-finite type and is nonsofic; in particular,
+$m=3$ gives another affirmative answer to Question 5.3.
+Moreover, the tracing points can all follow the pseudo-orbit at common
+periodic times, so even uniform syndetic tracing by each point does not
+characterize quasi-finite type.
+\end{abstract}
+
+\section{The question and the construction}
+The questions of Meddaugh and Stephens~\cite[Questions 5.1--5.2]{MS}
+ask which strict finite levels of neighborhood shadowing occur in dynamical
+systems and in subshifts. All positive finite levels occur, already in
+binary two-sided subshifts. Their positive results for mixing sofic shifts
+and shifts of quasi-finite type give neighborhood $2$-shadowing
+\cite[Theorems 3.2 and 3.7]{MS}; the construction here allows any prescribed
+finite bound, including $3$-shadowing without $2$-shadowing.
+The separation between $2$-shadowing and ordinary shadowing was already
+obtained in their Examples 3.4 and 3.6 and Theorem 3.7.
+We also prove that every member is mixing and has dense periodic points,
+although none is sofic.
+
+We use exactly the initial-diameter condition in
+\cite[Definition 2.1]{MS}. A continuous map $f$ on a compact metric space
+has \emph{neighborhood $r$-shadowing} if for every $\varepsilon>0$ there
+is $\delta>0$ such that each sequence $(z_t)_{t\geq0}$ satisfying
+$d(f(z_t),z_{t+1})<\delta$ admits a nonempty finite set $A$ with
+\[
+ |A|\leq r,\qquad \diam A<\varepsilon,\qquad
+ \min_{a\in A}d(f^t(a),z_t)<\varepsilon\quad(t\geq0).
+\]
+The set $A$ is fixed; its matching member may depend on $t$.
+Only its initial diameter is constrained.
+
+For $m\geq3$ put $b=m+1$. For $s\in\Z$ and $k\in\N=\{0,1,\ldots\}$,
+let
+\[
+ \begin{gathered}
+ P_{s,k}=\{s+j b^k:0\leq j<m\},\\
+ X_m=\left\{x\in\{0,1\}^{\Z}:
+       \sum_{j=0}^{m-1}x_{s+j b^k}\leq2
+       \text{ for all }s\in\Z,\ k\in\N\right\}.
+ \end{gathered}
+\]
+Write $(\sigma x)_n=x_{n+1}$. On the full shift use the metric
+$d(x,x)=0$ and, for $x\ne y$,
+\[
+ d(x,y)=2^{-\min\{|n|:x_n\ne y_n\}}.
+\]
+Agreement on $[-R,R]$ gives distance at most $2^{-(R+1)}$;
+distance less than $2^{-R}$ forces agreement there.
+The space $X_m$ contains the zero configuration, is closed because each
+constraint involves finitely many coordinates, and is invariant under
+every integer shift. Hence it is compact and $\sigma|_{X_m}$ is a
+homeomorphism, with inverse the shift by $-1$.
+
+\begin{theorem}\label{thm:main}
+For every $m\geq3$, $(X_m,\sigma)$ has neighborhood $(m-1)$-shadowing
+and does not have neighborhood $(m-2)$-shadowing. Consequently every
+$N\geq1$ occurs in both Questions 5.1 and 5.2, by taking $m=N+2$.
+\end{theorem}
+
+\section{A phase cover with a common initial neighborhood}
+An interval below denotes its open image in the circle $\mathbb R/m\Z$.
+For $m=3$, take
+\[
+ B_0=(-1/4,7/4),\qquad B_1=(m-7/4,m+1/4).
+\]
+For $m\geq4$ retain these two sets, put $h=1-1/(2(m-3))$, and for
+$2\leq a\leq m-2$ put
+\[
+ c_a=7/4+(a-3/2)h,\qquad
+ B_a=(-1/4,1/4)\ \cup\ (c_a-1/2,c_a+1/2).
+\]
+
+\begin{lemma}\label{lem:circle}
+The $m-1$ open sets $B_a$ cover $\mathbb R/m\Z$, all contain
+$(-1/4,1/4)$, and each contains at most two points of
+$\{u,u+1,\ldots,u+m-1\}$ for every real $u$.
+\end{lemma}
+\begin{proof}
+An open interval of length at most $1$ contains at most one of these
+points, and one of length at most $2$ contains at most two. Indeed,
+their lifts differ by distinct integers, so three lifts span at least
+$2$. This proves the count for $B_0,B_1$ and for each union defining
+$B_a$. The common neighborhood is immediate, using the lift around $m$
+for $B_1$.
+
+If $m=3$, the two length-$2$ arcs overlap and cover the circle.
+For $m\geq4$, the remote intervals have successive centers separated by
+$h<1$, so their union is one open interval. Its left endpoint is
+$5/4+h/2<7/4$, and its right endpoint is
+\[
+ 9/4+(m-7/2)h=m-7/4+\frac1{4(m-3)}>m-7/4.
+\]
+Thus they bridge the gap between $B_0$ and $B_1$. These two arcs also
+overlap across $0$ modulo $m$, proving the cover.
+\end{proof}
+
+\begin{lemma}\label{lem:masks}
+For every integer $R\geq0$ there are $K\geq0$ and sets
+$M_0,\ldots,M_{m-2}\subseteq\Z$ such that:
+\begin{enumerate}
+\item every $M_a$ contains $[-R,R]\cap\Z$;
+\item every window $[t-R,t+R]\cap\Z$, $t\geq0$, lies in some $M_a$;
+\item $|M_a\cap P_{s,k}|\leq2$ for all $s\in\Z$ and $k\geq K$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+The finite open cover in Lemma~\ref{lem:circle} has a uniform window
+margin: there is $\eta>0$ such that each circle point has its
+$\eta$-neighborhood contained in some $B_a$. To see this without a
+choice depending on infinitely many windows, choose for each point a
+ball whose double-radius ball lies in a cover member. A finite subcover
+of the smaller balls exists by compactness; the minimum of their radii
+works. Decrease $\eta$ so that $\eta<1/4$.
+Choose $K$ with $Q=b^K>R/\eta$, and set
+\[
+ M_a=\{n\in\Z:n/Q\bmod m\in B_a\}.
+\]
+The first two claims follow from $R/Q<\eta$ and the common
+neighborhood at $0$. For $k\geq K$, $b^{k-K}\equiv1\pmod m$.
+The phases of the vertices of $P_{s,k}$ are therefore
+$s/Q+j\pmod m$, $0\leq j<m$. Lemma~\ref{lem:circle} proves the last
+claim, including every translated progression.
+\end{proof}
+
+\section{The upper bound}
+Fix $\varepsilon>0$ and choose $R\geq0$ with
+$2^{-(R+1)}<\varepsilon$. Take the masks and $K$ from
+Lemma~\ref{lem:masks}. Put $H=(m-1)b^K$; enlarging $K$ if necessary
+ensures $H\geq R$. Let $\delta=2^{-H}$ and let $(z_t)_{t\geq0}$ be
+a $\delta$-pseudo-orbit in $X_m$. Its adjacent states satisfy
+\begin{equation}\label{eq:edge}
+ (z_t)_{j+1}=(z_{t+1})_j\qquad(-H\leq j\leq H).
+\end{equation}
+Define a single signed configuration by
+\[
+ c_n=\begin{cases}(z_0)_n,&n<0,\\(z_n)_0,&n\geq0.\end{cases}
+\]
+Repeated use of \eqref{eq:edge} gives
+\begin{equation}\label{eq:overlap}
+ c_{t+j}=(z_t)_j\quad(t\geq0,\ |j|\leq H),
+ \qquad c_n=(z_0)_n\quad(n\leq H).
+\end{equation}
+For $j\geq0$, propagate from time $t$ to $t+j$ with decreasing
+coordinate. For $j<0$ and $t+j\geq0$, propagate backwards to time
+$t+j$ with increasing coordinate. If $t+j<0$, propagate backwards
+to time $0$; every coordinate used lies between $j$ and $0$.
+These are precisely the ranges permitted by \eqref{eq:edge}.
+
+Every progression constraint of $c$ at scale $k<K$ is legal.
+Indeed, its span $D=(m-1)b^k$ is at most $H$. If its largest
+coordinate is at most $H$, the whole progression belongs to the
+unchanged part of $z_0$ in \eqref{eq:overlap}. Otherwise its smallest
+coordinate $s$ is positive, since $s+D>H$ and $D\leq H$.
+Its vertices agree with coordinates $0,b^k,\ldots,(m-1)b^k$ of
+$z_s$, by \eqref{eq:overlap}. In either case legality follows from
+membership of that state in $X_m$.
+
+For $0\leq a\leq m-2$, define an entire configuration
+\[
+ y^a_n=\begin{cases}c_n,&n\in M_a,\\0,&n\notin M_a.\end{cases}
+\]
+Deleting ones cannot violate a short-scale constraint. At scale $k\geq K$,
+at most two vertices belong to $M_a$, by Lemma~\ref{lem:masks}.
+Thus each $y^a$ belongs to $X_m$. Take
+$A=\{y^0,\ldots,y^{m-2}\}$, with repeated configurations counted once.
+All its members agree with $z_0$ on $[-R,R]$, so
+$\diam A\leq2^{-(R+1)}<\varepsilon$. For every $t\geq0$,
+some mask contains $[t-R,t+R]$; for that $a$,
+\[
+ (\sigma^t y^a)_j=c_{t+j}=(z_t)_j\quad(|j|\leq R).
+\]
+Hence $d(\sigma^t y^a,z_t)\leq2^{-(R+1)}<\varepsilon$.
+This proves neighborhood $(m-1)$-shadowing with one fixed nonempty set.
+
+\section{The matching lower bound}
+Fix $\varepsilon_0=1/2$. Given any $\delta>0$, choose $L\geq1$
+with $2^{-L}<\delta$ and choose $k$ with $q=b^k>2L+2$.
+Let $V=\{0,q,\ldots,(m-1)q\}$ and define $z_t$ to be the
+indicator configuration of
+\[
+ (V-t)\cap[-L,L]\quad(t\geq0).
+\]
+This support has at most one point, so $z_t\in X_m$.
+For $-L+1\leq j\leq L-1$,
+\[
+ (\sigma z_t)_j=1\ \Longleftrightarrow\ t+j+1\in V
+ \ \Longleftrightarrow\ (z_{t+1})_j=1.
+\]
+Consequently $d(\sigma z_t,z_{t+1})\leq2^{-L}<\delta$.
+Also $(z_{jq})_0=1$ for $0\leq j<m$.
+
+Suppose a finite nonempty $A$ with $\diam A<1/2$ traces this sequence
+to accuracy $1/2$. At time $0$ some member has coordinate $0$ equal
+to $1$. The diameter condition forces every member of $A$ to have
+that same coordinate equal to $1$. For each $1\leq j<m$, tracing
+at time $jq$ requires some $a\in A$ with $a_{jq}=1$.
+No single $a$ can serve two distinct such indices: together with
+$a_0=1$ they would give three ones on $P_{0,k}$, contrary to
+$a\in X_m$. Thus $m-1$ different members are necessary. In particular
+no set of at most $m-2$ members works. This proves the lower bound
+and completes Theorem~\ref{thm:main}.
+
+\section{Consequences and coverage}
+\begin{corollary}\label{cor:rank}
+The subshift $X_4$ has neighborhood $3$-shadowing but not neighborhood
+$2$-shadowing. More generally the least finite neighborhood-shadowing
+bound of $X_m$ is exactly $m-1$.
+\end{corollary}
+\begin{proof}
+Apply Theorem~\ref{thm:main}. A set of cardinality at most $r$ is also
+one of cardinality at most $r+1$, so failure at $m-2$ excludes every
+smaller bound.
+\end{proof}
+
+\begin{corollary}\label{cor:qft}
+No $X_m$ is of quasi-finite type, or of finite type. In particular,
+$X_3$ answers Question 5.3 of~\cite{MS} affirmatively.
+\end{corollary}
+\begin{proof}
+Recall \cite[Definition 3.5]{MS}: quasi-finite type requires a bound $M$
+such that, whenever words $u,w,v$ belong to the language with $uw,wv$
+allowed and $|w|\geq M$, some word $z$ with $|z|=|w|$ makes $uzv$
+allowed. Given any proposed $M$, choose $q=b^k$ with $q-1\geq M$,
+and put
+\[
+ u=10^{q-1}1,\qquad w=0^{q-1},\qquad v=1.
+\]
+Both $uw$ and $wv$ occur in configurations with at most two ones,
+so they belong to the language of $X_m$. But every $uzv$ with
+$|z|=q-1$ has ones at positions $0,q,2q$. Those are three vertices of
+$P_{0,k}$ since $m\geq3$, so no such word belongs to the language.
+This disproves quasi-finite type. A shift of finite type is of
+quasi-finite type: if the longest forbidden word has length $B$ and
+$|w|\geq B$, any forbidden word in $uwv$ would be contained in $uw$
+or in $wv$. Splicing a left extension of $uw$ and a right extension of
+$wv$ through the shared word $w$ gives a full configuration avoiding
+all forbidden words. Thus $uwv$ is allowed, and $X_m$ is not of finite type.
+Theorem~\ref{thm:main} supplies neighborhood $2$-shadowing for $X_3$.
+\end{proof}
+
+The companion note of Ma and Zhang~\cite{MZ} answers Question 5.3
+by a distinct return-distance construction. Its specialization to powers
+of two is stated by \nolinkurl{powers_two_return_distance_example}
+in the pinned
+\href{https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/PowersTwoReturnDistances.lean}{\texttt{PowersTwoReturnDistances.lean}}.
+Corollary~\ref{cor:qft} instead concerns the progression family $X_m$.
+The powers-of-two example allows the all-ones configuration, whereas
+$X_3$ forbids $111$.
+
+\begin{corollary}\label{cor:returns}
+For every $m\geq3$ and every $\varepsilon>0$, there are $\delta>0$
+and an integer $p\geq1$ such that every $\delta$-pseudo-orbit $(z_t)$
+in $X_m$ admits a fixed nonempty set $A$ with $|A|\leq m-1$,
+$\diam A<\varepsilon$, and
+\[
+ \min_{a\in A}d(\sigma^t a,z_t)<\varepsilon\quad(t\geq0),
+ \qquad
+ \max_{a\in A}d(\sigma^{\ell p}a,z_{\ell p})<\varepsilon
+ \quad(\ell\geq0).
+\]
+In particular, even neighborhood two-shadowing in which each tracer
+has a uniformly bounded return time to the pseudo-orbit does not imply
+quasi-finite type.
+\end{corollary}
+\begin{proof}
+The masks in Lemma~\ref{lem:masks} are periodic with common integer
+period $p=mQ$, since adding $mQ$ to a coordinate adds $m$ to its phase.
+Each mask contains $[-R,R]$, so each contains
+$[\ell p-R,\ell p+R]$ for every integer $\ell$.
+The upper-bound construction therefore makes every $y^a$ agree with
+$z_{\ell p}$ on the radius-$R$ observation window at time $\ell p$.
+The choices of $p$ and $\delta$ depend on $\varepsilon,m$, not on
+the pseudo-orbit. Each block of $p$ consecutive natural times contains
+a multiple of $p$, giving the asserted uniform return bound.
+For the last claim take $m=3$ and use Corollary~\ref{cor:qft}.
+\end{proof}
+
+The discussion immediately before Question 5.3 of~\cite{MS} notes
+syndetic tracing in the quasi-finite-type construction. The converse
+with a uniform syndetic bound is not asserted there;
+Corollary~\ref{cor:returns} shows that this natural strengthening of
+two-shadowing alone is insufficient for a characterization.
+
+\begin{corollary}\label{cor:mixing}
+For every $m\geq3$, $X_m$ is topologically mixing and has dense periodic
+points. It is nonsofic. Thus every separation in Theorem~\ref{thm:main}
+occurs within mixing nonsofic subshifts with dense periodic points.
+\end{corollary}
+\begin{proof}
+Deleting ones preserves every defining constraint. Hence the zero
+extension of any allowed word is legal. Let $u,v$ be allowed nonempty
+words, put $D=\max(|u|-1,|v|-1)$, and separate their zero extensions by
+a zero gap whose length exceeds $(m-1)D$. If a progression contained
+three ones in their union, it would meet both word intervals and two of
+its occupied vertices would lie in one interval. Its step $b^k$ would
+then be at most $D$, so its total span would be at most $(m-1)D$.
+This is smaller than the distance between the intervals, a contradiction.
+The union is legal for every sufficiently long gap, which proves mixing
+on cylinders and therefore on arbitrary nonempty open sets.
+
+For density of periodic points, let $u$ be an allowed word of length
+$L$, choose $Q=b^K>L$, and repeat $u$ with zeros between its copies at
+period $p=mQ$. Call the resulting point $x$. A progression of scale
+$k<K$ has span less than $(m-1)Q$, whereas different word intervals are
+separated by distance at least $mQ-(L-1)>(m-1)Q$. It meets at most one
+copy of $u$, where the zero extension is legal. For $k\geq K$, its step
+is congruent to $Q$ modulo $mQ$, since $b\equiv1\pmod m$. Its $m$
+vertices modulo $p$ form a full set spaced by $Q$. An interval of length
+$L<Q$ contains at most one of those vertices. Hence these progressions
+also contain at most two ones, and $x\in X_m$. Every allowed cylinder
+therefore contains a periodic point. Its singleton is a nonempty compact
+periodic set, so $X_m$ has dense small periodic sets as well.
+
+Finally, a mixing sofic shift has a uniform mixing number
+\cite[Proposition 2.3]{MS}: for all allowed $u,v$ and every sufficiently
+large length $n$, a word $z$ of length $n$ makes $uzv$ allowed.
+This implies quasi-finite type, contradicting Corollary~\ref{cor:qft}.
+Thus $X_m$ is not sofic.
+\end{proof}
+
+\noindent The following table refers to Section 5 of~\cite{MS}.
+\begin{center}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.22\linewidth}>{\raggedright\arraybackslash}p{.71\linewidth}@{}}
+\toprule
+Source item&Coverage\\\midrule
+Questions 5.1, 5.2 (p.\ 11)&Answered: every $N\geq1$, by $X_{N+2}$.
+For $N=1$, reproved; prior examples of Meddaugh--Stephens (2025).
+All witnesses here are mixing, nonsofic, with dense periodic points.\\
+Preceding $3$ versus $2$ case (p.\ 11)&Answered: yes, by $X_4$.\\
+Question 5.3 (p.\ 11)&Answered: yes, by $X_3$; the companion
+return-distance example is in~\cite{MZ}.\\
+Preceding syndetic-tracing comment&Not asserted in the source: the
+uniform-syndetic converse fails for $X_3$, even with common periodic
+tracing times (Corollary~\ref{cor:returns}).\\
+Questions 5.4, 5.5&Not covered: an explicit family is not a characterization
+of either class of subshifts.\\
+Question 5.6 (p.\ 12)&Not covered by this family: its periodic points
+are dense. A separate example answering yes is specified below.\\\bottomrule
+\end{tabular}
+\end{center}
+
+Question 5.6 has a separate affirmative construction at $N=2$, stated by
+\nolinkurl{quadratic_progression_example} in
+\href{https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/ProgressionExample.lean}{\texttt{ProgressionExample.lean}}.
+It gives a compact surjective weakly mixing system with neighborhood
+$2$-shadowing and a nonempty clopen set containing no nonempty set
+mapped into itself by any positive forward power. In particular, that open set
+contains no nonempty compact periodic set. Corollary~\ref{cor:mixing}
+explains why the family $X_m$ is different.
+
+\paragraph{Formal statement and finite checks.}
+The pinned Lean declaration
+\nolinkurl{lacunary_shadowing_hierarchy} in
+\href{https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/LacunaryShadowingHierarchy.lean}{the Lean companion}
+states the nonemptiness, compactness, continuity, bijectivity and both
+neighborhood-shadowing conclusions of Theorem~\ref{thm:main}.
+Its predicate uses a fixed nonempty finite tracing set and initial diameter,
+with natural-time pseudo-orbits on integer-coordinate configurations.
+The supporting declarations have the following separate scopes:
+\begin{itemize}
+\item In the \href{https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/LacunaryProgressionSubshift.lean}{progression-subshift module},
+\nolinkurl{NeighborhoodFiniteShadowing} and \nolinkurl{LacunaryLegal}
+define the tracing property and the progression constraint;
+\nolinkurl{lacunary_legal_closed}, \nolinkurl{lacunary_legal_shift},
+\nolinkurl{lacunary_zero_legal} and \nolinkurl{lacunary_shift_continuous}
+give closure, translation invariance, nonemptiness and continuity.
+\item In \href{https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/LacunaryPhaseCover.lean}{\texttt{LacunaryPhaseCover.lean}},
+\nolinkurl{lacunary_phase_cover} supplies $m-1$ masks containing the
+initial window, covering every later window, and avoiding triples on
+every translated sufficiently large progression.
+\item In \href{https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/LacunaryShadowingUpper.lean}{\texttt{LacunaryShadowingUpper.lean}},
+\nolinkurl{lacunary_neighborhood_upper} proves neighborhood
+$(m-1)$-shadowing for every $m\geq3$.
+\item In \href{https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/LacunaryShadowingLower.lean}{\texttt{LacunaryShadowingLower.lean}},
+\nolinkurl{lacunary_not_neighborhood_smaller} excludes neighborhood
+$(m-2)$-shadowing for every $m\geq3$.
+\item In \href{https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/ReturnDistanceShadowing.lean}{\texttt{ReturnDistanceShadowing.lean}},
+\nolinkurl{return_metric_window} and \nolinkurl{return_window_control}
+relate finite coordinate windows to the product metric, and
+\nolinkurl{signed_diagonal_overlap} proves the signed diagonal identity.
+\end{itemize}
+The formal metric is the compatible countable-product metric; the metric
+used above is uniformly equivalent on the compact space. The property is
+unchanged by such a replacement: transfer the requested accuracy by uniform
+continuity in one direction, obtain a tracing tolerance, then transfer that
+tolerance by uniform continuity in the other direction. This controls
+diameters and pointwise tracing by the same two implications.
+The supplied exact-rational checks cover the circle masks for
+$3\leq m\leq20$. The arguments above prove the claims for every $m\geq3$;
+Corollaries~\ref{cor:qft}, \ref{cor:returns} and~\ref{cor:mixing}
+have written proofs here.
+The independent integer checks in \texttt{verify-structure.py} cover all
+allowed binary words of length at most $6$ for $3\leq m\leq6$: they
+test zero-gap gluing, periodic extensions, and the exact-length bridge
+obstruction. Their finite ranges supplement the all-parameter proofs.
+
+\begin{thebibliography}{9}
+\bibitem{MS} Jonathan Meddaugh and Elyssa Stephens,
+\emph{Shadowing with small diameter sets of bounded cardinality},
+arXiv:2509.04312v1, September 4, 2025.
+\href{https://arxiv.org/abs/2509.04312v1}{arXiv:2509.04312v1}.
+\bibitem{MZ} Haobo Ma and Wenlin Zhang,
+\emph{Neighborhood two-shadowing without quasi-finite type},
+unpublished mathematical note, October 2026, Theorem 1.
+The powers-of-two statement is given in
+\href{https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/PowersTwoReturnDistances.lean}{\texttt{PowersTwoReturnDistances.lean}}.
+\end{thebibliography}
+\smallskip\noindent\small
+\copyright\ 2026 Haobo Ma and Wenlin Zhang.
+Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+\end{document}

@@ -1,0 +1,42 @@
+{
+  "generated_paths": [
+    "CHANGELOG.md",
+    "CITATION.cff",
+    "CONTRIBUTING.md",
+    "LICENSES/CC-BY-4.0.txt",
+    "README.md",
+    "formalization/nodes.json",
+    "manuscript/README.md",
+    "manuscript/metadata.json",
+    "manuscript/note.tex",
+    "manuscript/source-manifest.json",
+    "manuscript/structure-verification.json",
+    "manuscript/verification.json",
+    "manuscript/verify-structure.py",
+    "manuscript/verify.py",
+    "paper.json",
+    "paper.pdf",
+    "source.archive"
+  ],
+  "generator_version": "0.1.0",
+  "sha256": {
+    "CHANGELOG.md": "3b0c25a07d47beeb019723f33d8466f3566798da46ae4c1e2fa6ce8e127c220d",
+    "CITATION.cff": "fde1be8bf0375981a34d432f1bfa7aebc270f7f1a45704ca5e732af9a1387a18",
+    "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
+    "LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
+    "README.md": "ef7de1e2137e066b2d46aca6b8a04afdae7de443693bbcec3eba8c9f6698532a",
+    "formalization/nodes.json": "b10d005b205380e3d2834d2a505a338e06fa30f191622b3b50917d463d60f3a9",
+    "manuscript/README.md": "694509912ad5a8af7f965a35adb002027e326ee5829a87a4411c659416d306b1",
+    "manuscript/metadata.json": "01b8872720e1e7a9e324d5d12ab0ccf1ac78b97a6ba227c0e1312ceb4f0f9a36",
+    "manuscript/note.tex": "e5c2967d534e01161923c8f127abd9babf93a40f78ba57d21048ef032c7a00a5",
+    "manuscript/source-manifest.json": "1bd89d538b15526f985df7a7a3aee15d0cc13e825072cf8f11f4064728954d6a",
+    "manuscript/structure-verification.json": "56295947abde4e728186bd6affb3995d55b4aa26611986cf7235a4b1301f8988",
+    "manuscript/verification.json": "39ad25d133c7ae82b0e5754edf7c00bab1dda51a253c2ba8d0223c55e9ff592a",
+    "manuscript/verify-structure.py": "1c138d70fee6344adc785b4fd35289581c3319175a5b59c3a66b14f0f77bd2d1",
+    "manuscript/verify.py": "dea9fb14fd8ee3d5ec8bf450509c88bb12894de066d05bc4aebae26460761b4b",
+    "paper.json": "2bef252c3c4584e5ecc07665afb7b3300a908ffe73a55b6fe5cbc928c1a7b2e3",
+    "paper.pdf": "d39e9460b71c58272f0ba71a923172bf1a37a52e05743be497e5b8dacba85734",
+    "source.archive": "b7e972097a7448a6af858952d247b5e04a7c66e6a376679a04e544f88a897b18"
+  },
+  "snapshot_identity": "a440f1b10b9da43da59f9957a4574e0aa2b356f4bc04bf4375a8d452fc7418de"
+}

@@ -1,0 +1,35 @@
+{
+  "status": "pass",
+  "arithmetic": "exact integer",
+  "scope": "All allowed binary words of lengths 1 through 6 for 3 <= m <= 6; three zero-gap lengths for each ordered pair; every translated progression in each proposed periodic extension at scales 0 through K; bridge obstructions at scales 0, 1, 2. The congruence (m+1)^k = (m+1)^K modulo m(m+1)^K for k >= K and the all-parameter conclusions have written proofs in note.tex.",
+  "results": [
+    {
+      "m": 3,
+      "allowed_words": 94,
+      "gluing_cases": 26508,
+      "periodic_progressions": 11976,
+      "bridge_obstructions": 3
+    },
+    {
+      "m": 4,
+      "allowed_words": 76,
+      "gluing_cases": 17328,
+      "periodic_progressions": 16560,
+      "bridge_obstructions": 3
+    },
+    {
+      "m": 5,
+      "allowed_words": 66,
+      "gluing_cases": 13068,
+      "periodic_progressions": 16440,
+      "bridge_obstructions": 3
+    },
+    {
+      "m": 6,
+      "allowed_words": 62,
+      "gluing_cases": 11532,
+      "periodic_progressions": 5208,
+      "bridge_obstructions": 3
+    }
+  ]
+}

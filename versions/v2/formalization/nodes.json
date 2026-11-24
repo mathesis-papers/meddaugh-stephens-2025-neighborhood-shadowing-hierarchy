@@ -1,0 +1,291 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:meddaugh-stephens-2025-neighborhood-shadowing-hierarchy:2:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "147008bff5524a3dccf0efa3ed9e76fb6b168a50",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/LacunaryShadowingHierarchy.lean"
+      },
+      "lineage": "collected:meddaugh-stephens-2025-neighborhood-shadowing-hierarchy:s1",
+      "macros": {
+        "\\N": "\\mathbb N",
+        "\\Z": "\\mathbb Z",
+        "\\diam": "\\operatorname{diam}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy",
+      "scope": "in_scope",
+      "statement": "For every $m\\geq3$, $(X_m,\\sigma)$ has neighborhood $(m-1)$-shadowing\nand does not have neighborhood $(m-2)$-shadowing. Consequently every\n$N\\geq1$ occurs in both Questions 5.1 and 5.2, by taking $m=N+2$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Extending Meddaugh and Stephens' examples to every finite neighborhood-shadowing separation",
+      "toolchain": null,
+      "version": 2,
+      "work": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:meddaugh-stephens-2025-neighborhood-shadowing-hierarchy:2:s2",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "147008bff5524a3dccf0efa3ed9e76fb6b168a50",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/LacunaryShadowingHierarchy.lean"
+      },
+      "lineage": "collected:meddaugh-stephens-2025-neighborhood-shadowing-hierarchy:s2",
+      "macros": {
+        "\\N": "\\mathbb N",
+        "\\Z": "\\mathbb Z",
+        "\\diam": "\\operatorname{diam}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy",
+      "scope": "in_scope",
+      "statement": "The $m-1$ open sets $B_a$ cover $\\mathbb R/m\\Z$, all contain\n$(-1/4,1/4)$, and each contains at most two points of\n$\\{u,u+1,\\ldots,u+m-1\\}$ for every real $u$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Extending Meddaugh and Stephens' examples to every finite neighborhood-shadowing separation",
+      "toolchain": null,
+      "version": 2,
+      "work": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:meddaugh-stephens-2025-neighborhood-shadowing-hierarchy:2:s3",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "147008bff5524a3dccf0efa3ed9e76fb6b168a50",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/LacunaryShadowingHierarchy.lean"
+      },
+      "lineage": "collected:meddaugh-stephens-2025-neighborhood-shadowing-hierarchy:s3",
+      "macros": {
+        "\\N": "\\mathbb N",
+        "\\Z": "\\mathbb Z",
+        "\\diam": "\\operatorname{diam}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy",
+      "scope": "in_scope",
+      "statement": "For every integer $R\\geq0$ there are $K\\geq0$ and sets\n$M_0,\\ldots,M_{m-2}\\subseteq\\Z$ such that:\n\\begin{enumerate}\n\\item every $M_a$ contains $[-R,R]\\cap\\Z$;\n\\item every window $[t-R,t+R]\\cap\\Z$, $t\\geq0$, lies in some $M_a$;\n\\item $|M_a\\cap P_{s,k}|\\leq2$ for all $s\\in\\Z$ and $k\\geq K$.\n\\end{enumerate}",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Extending Meddaugh and Stephens' examples to every finite neighborhood-shadowing separation",
+      "toolchain": null,
+      "version": 2,
+      "work": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:meddaugh-stephens-2025-neighborhood-shadowing-hierarchy:2:s4",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "147008bff5524a3dccf0efa3ed9e76fb6b168a50",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/LacunaryShadowingHierarchy.lean"
+      },
+      "lineage": "collected:meddaugh-stephens-2025-neighborhood-shadowing-hierarchy:s4",
+      "macros": {
+        "\\N": "\\mathbb N",
+        "\\Z": "\\mathbb Z",
+        "\\diam": "\\operatorname{diam}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy",
+      "scope": "in_scope",
+      "statement": "The subshift $X_4$ has neighborhood $3$-shadowing but not neighborhood\n$2$-shadowing. More generally the least finite neighborhood-shadowing\nbound of $X_m$ is exactly $m-1$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Extending Meddaugh and Stephens' examples to every finite neighborhood-shadowing separation",
+      "toolchain": null,
+      "version": 2,
+      "work": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:meddaugh-stephens-2025-neighborhood-shadowing-hierarchy:2:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "147008bff5524a3dccf0efa3ed9e76fb6b168a50",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/LacunaryShadowingHierarchy.lean"
+      },
+      "lineage": "collected:meddaugh-stephens-2025-neighborhood-shadowing-hierarchy:s5",
+      "macros": {
+        "\\N": "\\mathbb N",
+        "\\Z": "\\mathbb Z",
+        "\\diam": "\\operatorname{diam}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy",
+      "scope": "in_scope",
+      "statement": "No $X_m$ is of quasi-finite type, or of finite type. In particular,\n$X_3$ answers Question 5.3 of~\\cite{MS} affirmatively.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Extending Meddaugh and Stephens' examples to every finite neighborhood-shadowing separation",
+      "toolchain": null,
+      "version": 2,
+      "work": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s6",
+      "contributor": null,
+      "identity": "collected:meddaugh-stephens-2025-neighborhood-shadowing-hierarchy:2:s6",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "147008bff5524a3dccf0efa3ed9e76fb6b168a50",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/LacunaryShadowingHierarchy.lean"
+      },
+      "lineage": "collected:meddaugh-stephens-2025-neighborhood-shadowing-hierarchy:s6",
+      "macros": {
+        "\\N": "\\mathbb N",
+        "\\Z": "\\mathbb Z",
+        "\\diam": "\\operatorname{diam}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy",
+      "scope": "in_scope",
+      "statement": "For every $m\\geq3$ and every $\\varepsilon>0$, there are $\\delta>0$\nand an integer $p\\geq1$ such that every $\\delta$-pseudo-orbit $(z_t)$\nin $X_m$ admits a fixed nonempty set $A$ with $|A|\\leq m-1$,\n$\\diam A<\\varepsilon$, and\n\\[\n \\min_{a\\in A}d(\\sigma^t a,z_t)<\\varepsilon\\quad(t\\geq0),\n \\qquad\n \\max_{a\\in A}d(\\sigma^{\\ell p}a,z_{\\ell p})<\\varepsilon\n \\quad(\\ell\\geq0).\n\\]\nIn particular, even neighborhood two-shadowing in which each tracer\nhas a uniformly bounded return time to the pseudo-orbit does not imply\nquasi-finite type.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Extending Meddaugh and Stephens' examples to every finite neighborhood-shadowing separation",
+      "toolchain": null,
+      "version": 2,
+      "work": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s7",
+      "contributor": null,
+      "identity": "collected:meddaugh-stephens-2025-neighborhood-shadowing-hierarchy:2:s7",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "147008bff5524a3dccf0efa3ed9e76fb6b168a50",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/LacunaryShadowingHierarchy.lean"
+      },
+      "lineage": "collected:meddaugh-stephens-2025-neighborhood-shadowing-hierarchy:s7",
+      "macros": {
+        "\\N": "\\mathbb N",
+        "\\Z": "\\mathbb Z",
+        "\\diam": "\\operatorname{diam}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy",
+      "scope": "in_scope",
+      "statement": "For every $m\\geq3$, $X_m$ is topologically mixing and has dense periodic\npoints. It is nonsofic. Thus every separation in Theorem~\\ref{thm:main}\noccurs within mixing nonsofic subshifts with dense periodic points.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Extending Meddaugh and Stephens' examples to every finite neighborhood-shadowing separation",
+      "toolchain": null,
+      "version": 2,
+      "work": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy"
+    }
+  ]
+}

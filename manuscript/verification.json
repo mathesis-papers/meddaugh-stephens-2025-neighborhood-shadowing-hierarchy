@@ -1,0 +1,97 @@
+{
+  "status": "pass",
+  "arithmetic": "exact rational",
+  "scope": "Circle masks, polygon occupancy at all arrangement endpoints and open cells, and circle coverage with margin 1/(16m), for 3 <= m <= 20. The all-integer theorem has a written proof in note.tex.",
+  "results": [
+    {
+      "m": 3,
+      "polygon_arrangement_cases": 10,
+      "eroded_cover_arrangement_cases": 11
+    },
+    {
+      "m": 4,
+      "polygon_arrangement_cases": 19,
+      "eroded_cover_arrangement_cases": 15
+    },
+    {
+      "m": 5,
+      "polygon_arrangement_cases": 28,
+      "eroded_cover_arrangement_cases": 19
+    },
+    {
+      "m": 6,
+      "polygon_arrangement_cases": 37,
+      "eroded_cover_arrangement_cases": 23
+    },
+    {
+      "m": 7,
+      "polygon_arrangement_cases": 46,
+      "eroded_cover_arrangement_cases": 27
+    },
+    {
+      "m": 8,
+      "polygon_arrangement_cases": 55,
+      "eroded_cover_arrangement_cases": 31
+    },
+    {
+      "m": 9,
+      "polygon_arrangement_cases": 64,
+      "eroded_cover_arrangement_cases": 35
+    },
+    {
+      "m": 10,
+      "polygon_arrangement_cases": 73,
+      "eroded_cover_arrangement_cases": 39
+    },
+    {
+      "m": 11,
+      "polygon_arrangement_cases": 82,
+      "eroded_cover_arrangement_cases": 43
+    },
+    {
+      "m": 12,
+      "polygon_arrangement_cases": 91,
+      "eroded_cover_arrangement_cases": 47
+    },
+    {
+      "m": 13,
+      "polygon_arrangement_cases": 100,
+      "eroded_cover_arrangement_cases": 51
+    },
+    {
+      "m": 14,
+      "polygon_arrangement_cases": 109,
+      "eroded_cover_arrangement_cases": 55
+    },
+    {
+      "m": 15,
+      "polygon_arrangement_cases": 118,
+      "eroded_cover_arrangement_cases": 59
+    },
+    {
+      "m": 16,
+      "polygon_arrangement_cases": 127,
+      "eroded_cover_arrangement_cases": 63
+    },
+    {
+      "m": 17,
+      "polygon_arrangement_cases": 136,
+      "eroded_cover_arrangement_cases": 67
+    },
+    {
+      "m": 18,
+      "polygon_arrangement_cases": 145,
+      "eroded_cover_arrangement_cases": 71
+    },
+    {
+      "m": 19,
+      "polygon_arrangement_cases": 154,
+      "eroded_cover_arrangement_cases": 75
+    },
+    {
+      "m": 20,
+      "polygon_arrangement_cases": 163,
+      "eroded_cover_arrangement_cases": 79
+    }
+  ]
+}

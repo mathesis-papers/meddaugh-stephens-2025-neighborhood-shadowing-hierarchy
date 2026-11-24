@@ -1,0 +1,15 @@
+{
+  "id": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy",
+  "revision": 2,
+  "problem_ids": ["meddaugh-stephens-2025-neighborhood-shadowing-hierarchy", "meddaugh-stephens-2025-neighborhood-two-shadowing"],
+  "topic": "Every positive finite strict neighborhood-shadowing separation occurs in a mixing nonsofic binary two-sided subshift with dense periodic points",
+  "title": "Extending Meddaugh and Stephens' examples to every finite neighborhood-shadowing separation",
+  "creators": [
+    {"name": "Ma, Haobo", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Zhang, Wenlin", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "Extending the N=1 examples of Meddaugh and Stephens, Shadowing with small diameter sets of bounded cardinality (arXiv:2509.04312v1, September 4, 2025, Examples 3.4 and 3.6, Theorem 3.7), we answer their Questions 5.1 and 5.2 (Section 5, printed page 11) for every N>=1 by mixing binary subshifts with dense periodic points. For each m>=3, we construct a compact two-sided subshift with neighborhood (m-1)-shadowing but without neighborhood (m-2)-shadowing. A periodic phase cover supplies one fixed tracing set of at most m-1 points with arbitrarily small initial diameter. A progression with widely separated occupied sites forces the matching lower bound. Every member fails quasi-finite type and is nonsofic; in particular, m=3 gives another affirmative answer to Question 5.3. Moreover, the tracing points can all follow the pseudo-orbit at common periodic times, so even uniform syndetic tracing by each point does not characterize quasi-finite type.",
+  "summary": "The progression subshift X_m has least neighborhood-shadowing bound m-1, is mixing, has dense periodic points, and is neither of quasi-finite type nor sofic, for every m>=3. Tracers have common periodic tracing times. Thus every positive finite separation occurs within mixing nonsofic binary two-sided subshifts, and uniform syndetic two-tracer shadowing does not characterize quasi-finite type.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/LacunaryShadowingHierarchy.lean"
+}

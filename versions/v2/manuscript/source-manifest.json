@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "name": "note.tex",
+      "bytes": 22130,
+      "sha256": "e5c2967d534e01161923c8f127abd9babf93a40f78ba57d21048ef032c7a00a5"
+    },
+    {
+      "name": "README.md",
+      "bytes": 4040,
+      "sha256": "694509912ad5a8af7f965a35adb002027e326ee5829a87a4411c659416d306b1"
+    },
+    {
+      "name": "metadata.json",
+      "bytes": 2273,
+      "sha256": "01b8872720e1e7a9e324d5d12ab0ccf1ac78b97a6ba227c0e1312ceb4f0f9a36"
+    },
+    {
+      "name": "verify.py",
+      "bytes": 2625,
+      "sha256": "dea9fb14fd8ee3d5ec8bf450509c88bb12894de066d05bc4aebae26460761b4b"
+    },
+    {
+      "name": "verification.json",
+      "bytes": 2264,
+      "sha256": "39ad25d133c7ae82b0e5754edf7c00bab1dda51a253c2ba8d0223c55e9ff592a"
+    },
+    {
+      "name": "verify-structure.py",
+      "bytes": 3201,
+      "sha256": "1c138d70fee6344adc785b4fd35289581c3319175a5b59c3a66b14f0f77bd2d1"
+    },
+    {
+      "name": "structure-verification.json",
+      "bytes": 1061,
+      "sha256": "56295947abde4e728186bd6affb3995d55b4aa26611986cf7235a4b1301f8988"
+    }
+  ]
+}

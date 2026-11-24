@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 87197,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "d39e9460b71c58272f0ba71a923172bf1a37a52e05743be497e5b8dacba85734",
+      "sha256": "d39e9460b71c58272f0ba71a923172bf1a37a52e05743be497e5b8dacba85734"
+    },
+    "source": {
+      "bytes": 15461,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "b7e972097a7448a6af858952d247b5e04a7c66e6a376679a04e544f88a897b18",
+      "sha256": "b7e972097a7448a6af858952d247b5e04a7c66e6a376679a04e544f88a897b18"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "Extending the N=1 examples of Meddaugh and Stephens, Shadowing with small diameter sets of bounded cardinality (arXiv:2509.04312v1, September 4, 2025, Examples 3.4 and 3.6, Theorem 3.7), we answer their Questions 5.1 and 5.2 (Section 5, printed page 11) for every N>=1 by mixing binary subshifts with dense periodic points. For each m>=3, we construct a compact two-sided subshift with neighborhood (m-1)-shadowing but without neighborhood (m-2)-shadowing. A periodic phase cover supplies one fixed tracing set of at most m-1 points with arbitrarily small initial diameter. A progression with widely separated occupied sites forces the matching lower bound. Every member fails quasi-finite type and is nonsofic; in particular, m=3 gives another affirmative answer to Question 5.3. Moreover, the tracing points can all follow the pseudo-orbit at common periodic times, so even uniform syndetic tracing by each point does not characterize quasi-finite type.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 2,
+    "doi": null,
+    "lean_source": {
+      "revision": "147008bff5524a3dccf0efa3ed9e76fb6b168a50",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/LacunaryShadowingHierarchy.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 87197,
+      "sha256": "d39e9460b71c58272f0ba71a923172bf1a37a52e05743be497e5b8dacba85734",
+      "url": "/api/v1/collected-papers/meddaugh-stephens-2025-neighborhood-shadowing-hierarchy/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-24T11:32:40.317355897Z",
+    "record": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy",
+    "repository_name": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy",
+    "source": {
+      "bytes": 15461,
+      "sha256": "b7e972097a7448a6af858952d247b5e04a7c66e6a376679a04e544f88a897b18",
+      "url": "/api/v1/collected-papers/meddaugh-stephens-2025-neighborhood-shadowing-hierarchy/files/source?version=2"
+    },
+    "title": "Extending Meddaugh and Stephens' examples to every finite neighborhood-shadowing separation",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-24T11:32:40.317355897Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy"
+  }
+}
