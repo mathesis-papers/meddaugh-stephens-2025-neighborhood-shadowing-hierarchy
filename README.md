@@ -5,13 +5,15 @@
 Extending the N=1 examples of Meddaugh and Stephens, Shadowing with small diameter sets of bounded cardinality (arXiv:2509.04312v1, September 4, 2025, Examples 3.4 and 3.6, Theorem 3.7), we answer their Questions 5.1 and 5.2 (Section 5, printed page 11) for every N>=1 by mixing binary subshifts with dense periodic points. For each m>=3, we construct a compact two-sided subshift with neighborhood (m-1)-shadowing but without neighborhood (m-2)-shadowing. A periodic phase cover supplies one fixed tracing set of at most m-1 points with arbitrarily small initial diameter. A progression with widely separated occupied sites forces the matching lower bound. Every member fails quasi-finite type and is nonsofic; in particular, m=3 gives another affirmative answer to Question 5.3. Moreover, the tracing points can all follow the pseudo-orbit at common periodic times, so even uniform syndetic tracing by each point does not characterize quasi-finite type.
 
 - PDF: [frozen public file](paper.pdf)
+- DOI: [https://doi.org/10.5281/zenodo.24498082](https://doi.org/10.5281/zenodo.24498082)
+- Concept DOI: [https://doi.org/10.5281/zenodo.24498081](https://doi.org/10.5281/zenodo.24498081)
 - License: CC-BY-4.0
 - Version: 2
 - Mathesis record: [meddaugh-stephens-2025-neighborhood-shadowing-hierarchy](https://mathesis-omega-research.apps.chrono-ai.fun/papers/meddaugh-stephens-2025-neighborhood-shadowing-hierarchy?version=2)
 
 ## How to cite
 
-Haobo Ma, Wenlin Zhang (2026). Extending Meddaugh and Stephens' examples to every finite neighborhood-shadowing separation. Mathesis, version 2. https://mathesis-omega-research.apps.chrono-ai.fun/papers/meddaugh-stephens-2025-neighborhood-shadowing-hierarchy?version=2
+Haobo Ma, Wenlin Zhang (2026). Extending Meddaugh and Stephens' examples to every finite neighborhood-shadowing separation. Mathesis, version 2. https://doi.org/10.5281/zenodo.24498082
 
 ## Statement progress
 

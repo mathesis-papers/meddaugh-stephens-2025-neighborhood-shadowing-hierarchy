@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.24498081",
     "current_version": 2,
-    "doi": null,
+    "doi": "10.5281/zenodo.24498082",
     "lean_source": {
       "revision": "147008bff5524a3dccf0efa3ed9e76fb6b168a50",
       "url": "https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/LacunaryShadowingHierarchy.lean"
