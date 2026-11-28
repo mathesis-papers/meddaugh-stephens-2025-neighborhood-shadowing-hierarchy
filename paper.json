@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.24498081",
     "current_version": 2,
     "doi": "10.5281/zenodo.24498082",
+    "kind": "note",
     "lean_source": {
       "revision": "147008bff5524a3dccf0efa3ed9e76fb6b168a50",
       "url": "https://github.com/the-omega-institute/trureturing/blob/147008bff5524a3dccf0efa3ed9e76fb6b168a50/D5/S1/Dynamics/Shadowing/LacunaryShadowingHierarchy.lean"
@@ -55,10 +56,12 @@
     "title": "Extending Meddaugh and Stephens' examples to every finite neighborhood-shadowing separation",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-24T11:32:40.317355897Z",
         "revision": "2",
-        "version": 2
+        "version": 2,
+        "version_label": null
       }
     ],
     "work": "meddaugh-stephens-2025-neighborhood-shadowing-hierarchy"
